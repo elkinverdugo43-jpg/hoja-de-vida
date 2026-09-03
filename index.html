@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos HTML</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">
+                    <img src="assets/images/sena.svg" alt="Logo sena" width="50">
+                
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <article>
+                <h1>Bienvenido a mi página web</h1>
+                <p>Esta es una página de ejemplo creada para demostrar los fundamentos de HTML.</p>
+            </article>
+        </section>
+
+    <h1>Fundamentos de HTML</h1>
+    <h2>Elkin Ferney Verdugo Pinto</h2>
+    <p><strong>Aprendiz: 3233140</strong></p>
+
+    <h3>Sobre Mi</h3>
+    <p>
+        <em>Aprendiz de Análisis y Desarrollo de Software en el SENA, en formación como desarrolladora full-stack.</em><br>
+        <u>Me apasiona construir soluciones funcionales y bien documentadas</u>, aprender buenas prácticas de control de versiones con Git y trabajar en equipo usando metodologías<br>
+        bases de datos relacionales
+    </p>
+
+    <hr>
+
+    <h3>Habilidades Tecnicas</h3>
+    <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Django FW</li>
+    </ul>
+
+    <h3>Habilidades Blandas</h3>
+    <ol>
+        <li>Trabajo en equipo</li>
+        <li>Comunicacion asertiva</li>
+        <li>Resolucion de problemas</li>
+        <li>Adapatabilidad</li>
+        <li>Gestion de tiempo</li>
+    </ol>
+    </main>
+    <!--contenido multimedia-->
+    <section>
+        <h3>Contenido multimedia</h3>
+        <div>
+              <c  
+            <img src="assets/images/video games.png" alt="Imagen de videojuegos" width="300">
+            <center>
+                <video width="320" height="240" controls>
+                    <source src="assets/images/videogames.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </center>
+        </div>
+        <div>
+            <center>
+            <h4>Audio</h4>
+            <audio controls>
+                <source src="assets/audio/cancion.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            </center>
+        </div>
+        <div>
+            <center>
+            <h4>iframes - Maps </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31760.092739510757!2d-72.92518401612739!3d5.711461666599862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a48a8ae9bc4e7%3A0x4577dc8f78e0764b!2sCentro%20Nacional%20Minero%20SENA!5e0!3m2!1ses-419!2sco!4v1788400226526!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </center>
+        </div>
+        <div>
+            <center>
+            <h4>iframes - Youtube</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0qisGSwZym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </center>
+            <hr>
+            <!--tablas-->
+            <section>
+                <h3>Tabla horario de clases</h3>
+                <table border="1">
+                        <tr><!--encabesados-->
+                            <th>dia</th><!--1ra fila -->
+                            <th>competencia</th><!--2ra fila -->
+                            <th>Ciudad</th><!--3ra fila -->
+                        </tr>
+                     <tr> <!--1da fila -->
+                        <td>lunes</td><!--2ra columna -->
+                        <td>etica</td><!--2ta columna -->
+                        </tr>
+                    <tr><!--2da fila -->
+                        <td>martes</td><!--2ra columna -->
+                        <td>ingles</td><!--2ta columna -->  
+                        </tr>
+                    <tr><!--3ra fila -->
+                        <td>miercoles</td><!--2ta columna -->
+                        <td>tecnica</td><!--2ta columna -->
+                        </tr>
+                    <tr><!--4ta fila -->
+                        <td>jueves</td><!--2ta columna -->
+                        <td>tecnica</td><!--2ta columna -->
+                    <tr> </tr><!--5ta fila -->
+                        <td>viernes</td><!--2ta columna -->
+                        <td>tecnica</td><!--2ta columna -->
+                    </tr>
+                </table>
+            </section>
+            <hr>
+
+            <!--formulario de contacto-->
+            <section>
+                <h3>Formulario de contacto</h3>
+                <form action="#" method="post">
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                 <br>
+                    <button type="submit">Enviar mensaje</button>
+                </br>
+                 <br>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </br>
+                 <br>
+                    <label title="telefono">telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </br>
+                 <br>
+                    <label for="archivo">archivo</label>
+                    <input type="file" id="archivo" name="archivo" required>
+                </br>
+                 <br>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                </form>
+    </section>
+</body>
+</html>
