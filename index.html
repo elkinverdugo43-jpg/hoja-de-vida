@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content=" este es un ejemplo de una pagina web basica">
     <title>Fundamentos HTML</title>
+
+     <style> 
+        p {
+            color: green;
+        }
+        </style>
+
+<link rel="stylesheet" href="assets/CSS/styles.css"
+<link rel="stylesheet" type ="text/css" href="assets/css/styles.css">
+
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="menu-principal">
+            <div class="seccion">
                 <a href="#">
                     <img src="assets/images/sena.svg" alt="Logo sena" width="50">
                 
                 </a>
             </div>
-            <div>
+            <div class="seccion">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre Mi</a></li>
@@ -24,21 +36,22 @@
         </nav>
     </header>
 
-    <hr>
+    <hr color="blue" size="5" width="100%">
 
     <main>
         <section>
-            <article>
-                <h1>Bienvenido a mi página web</h1>
-                <p>Esta es una página de ejemplo creada para demostrar los fundamentos de HTML.</p>
-            </article>
-        </section>
+            <div class="seccion">
+        
+    
 
-    <h1>Fundamentos de HTML</h1>
-    <h2>Elkin Ferney Verdugo Pinto</h2>
-    <p><strong>Aprendiz: 3233140</strong></p>
+    <h1 style="color: red;">Fundamentos de HTML</h1>
+    <h2 style="color: blue;">Elkin Ferney Verdugo Pinto</h2>
+    <h3 class="texto-destacado">Aprendiz - 3233140</h3> 
+</div>
+</section>
+<section class="habilidades"
+    <h3 class="texto-destacado">Sobre Mi</h3>
 
-    <h3>Sobre Mi</h3>
     <p>
         <em>Aprendiz de Análisis y Desarrollo de Software en el SENA, en formación como desarrolladora full-stack.</em><br>
         <u>Me apasiona construir soluciones funcionales y bien documentadas</u>, aprender buenas prácticas de control de versiones con Git y trabajar en equipo usando metodologías<br>
@@ -64,11 +77,14 @@
         <li>Adapatabilidad</li>
         <li>Gestion de tiempo</li>
     </ol>
+
     </main>
+    </selection>
+
     <!--contenido multimedia-->
     <section>
         <h3>Contenido multimedia</h3>
-        <div>
+        <div class="multimedia-item">
               <c  
             <img src="assets/images/video games.png" alt="Imagen de videojuegos" width="300">
             <center>
@@ -78,7 +94,7 @@
                 </video>
             </center>
         </div>
-        <div>
+        <div class="multimedia-item">
             <center>
             <h4>Audio</h4>
             <audio controls>
@@ -87,22 +103,25 @@
             </audio>
             </center>
         </div>
-        <div>
+        <div class="multimedia-item">
             <center>
             <h4>iframes - Maps </h4>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31760.092739510757!2d-72.92518401612739!3d5.711461666599862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a48a8ae9bc4e7%3A0x4577dc8f78e0764b!2sCentro%20Nacional%20Minero%20SENA!5e0!3m2!1ses-419!2sco!4v1788400226526!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </center>
         </div>
-        <div>
+        <div class="multimedia-item">
             <center>
             <h4>iframes - Youtube</h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/0qisGSwZym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </center>
+            </div>
+    </section>
             <hr>
             <!--tablas-->
             <section>
+                <div class="multimedia-item">
                 <h3>Tabla horario de clases</h3>
-                <table border="1">
+                <table class="tabla-horario">
                         <tr><!--encabesados-->
                             <th>dia</th><!--1ra fila -->
                             <th>competencia</th><!--2ra fila -->
@@ -128,13 +147,15 @@
                         <td>tecnica</td><!--2ta columna -->
                     </tr>
                 </table>
+            </div>
             </section>
             <hr>
 
             <!--formulario de contacto-->
             <section>
-                <h3>Formulario de contacto</h3>
-                <form action="#" method="post">
+                <div class="multimedia-item">
+                <h3 class="texto-destacado">Formulario de contacto</h3>
+                <form class="formulario-contacto">
                     <br>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -161,6 +182,22 @@
                     <input type="date" id="fecha" name="fecha" required>
 
                 </form>
-    </section>
+            </div>
+            </section>
+            </main>
+
+            <hr>
+
+            <footer class="pie-pagina">
+            <div class="multimedia-item">
+                <p>contacto: elkinverdugo43@gmail.com</p>
+                <p>telefono: 3114629955</p>
+                <p>direccion: carrera 9#44-23</p>
+                <p>horario: lunes a viernes 8:00 AM - 5:00 PM</p>
+                <p>&copy; 2026 Elkin Ferney Verdugo Pinto. Todos los derechos reservados.</p>   
+                <p style="color:red;">hola mundo</p>
+                </div>
+            </footer>
+    
 </body>
 </html>
